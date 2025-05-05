@@ -1,0 +1,100 @@
+@import url("reset.css");
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-article
+{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem;
+    background-color: blanchedalmond;
+}
+
+.profile-pic
+{
+    justify-items: center;
+    margin-top: 2rem;
+}
+
+.plain-ol-div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-details
+{
+    justify-items: center;
+    align-content: center;
+}
+
+.contact-name
+{
+    font-size: 1.5rem;
+}
+
+.contact-title
+{
+    font-style: italic;
+}
+
+.company-info
+{
+    justify-items: center;
+    align-content: center;
+    margin-bottom: 1rem;
+}
+
+.company-name
+{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.company-slogan
+{
+    font-style: italic;
+}
+
+@media screen and (min-width: 500px)
+{
+    .plain-ol-div
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem 2rem;
+    }
+ 
+    .profile-pic
+    {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    .main-article
+    {
+        flex-direction: row;
+        justify-content: space-evenly;
+        justify-self: center;
+        width: 768px;
+    }
+    
+    .plain-ol-div
+    {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .profile-pic
+    {
+        margin: 2rem 0rem;
+    }
+}
